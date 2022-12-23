@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+   
 }
 
 header,
@@ -11,17 +12,20 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 85px;
   line-height: 85px;
   color: #f0ead6;
-  background-color: #4646d0;
+  background-color: darkred;
   align-items: center;
 }
 body {
-  background-color: rgb(231, 216, 216);
+  background-color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
+
+
 
 nav{
 display: flex;
@@ -34,30 +38,42 @@ nav a{
   margin:10px
 }
 
-/* Everything below except media selectors are probably wrong */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 45vh;
+  margin: 0 auto;
+}
 
-#contact {
+.contact {
     font-size: medium;
-    margin: 50px;
-    padding: 30px; 
+    margin: 10px;
+    padding: 10px; 
     float: left;
+    
 
 }
 
-#project_header{
-  text-align: center;
-  
-
-}
-.projects {
-    display: flex;
+.next-project {
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    height: 65vh;
+    margin-bottom: 100px;
     margin-top: 20px;
-    padding: 20px;
+    margin-left: 5%;
+    padding: 50px;
 }
-.projects h2 {
+
+
+.future {
+  display: flex;
+  margin-left: 10%;
+
+}
+#projects h2 {
   padding: 10px;
 }
 @media screen and (max-width: 992px) {
@@ -69,7 +85,7 @@ nav a{
   
   @media screen and (max-width: 768px) {
     header {
-      background-color: aquamarine;
+      background-color: darkslategray;
       font-style: italic;
       
     }
